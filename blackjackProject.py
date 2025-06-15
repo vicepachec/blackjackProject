@@ -76,4 +76,4 @@ while newGame:
                 print("You win!")
             print(f"Your final hand: {user_hand}, final score {user_score}")
             print(f"Dealer's final hand: {computer_hand}, final score: {computer_score}")
-    sleep(10000, clear_screen())
+    sleep(3, clear_screen())
