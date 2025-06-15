@@ -1,5 +1,6 @@
 import random
 import os
+from time import sleep
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 newGame = True
@@ -22,7 +23,6 @@ def clear_screen():
         os.system('clear')
 
 while newGame:
-    clear_screen()
     continueGame = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if continueGame == "n":
         newGame = False
@@ -76,3 +76,4 @@ while newGame:
                 print("You win!")
             print(f"Your final hand: {user_hand}, final score {user_score}")
             print(f"Dealer's final hand: {computer_hand}, final score: {computer_score}")
+    sleep(10000, clear_screen())
