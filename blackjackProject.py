@@ -23,6 +23,7 @@ def clear_screen():
         os.system('clear')
 
 while newGame:
+    clear_screen()
     continueGame = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if continueGame == "n":
         newGame = False
@@ -76,4 +77,4 @@ while newGame:
                 print("You win!")
             print(f"Your final hand: {user_hand}, final score {user_score}")
             print(f"Dealer's final hand: {computer_hand}, final score: {computer_score}")
-    sleep(3, clear_screen())
+    sleep(3)
