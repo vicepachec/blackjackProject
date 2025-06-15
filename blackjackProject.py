@@ -38,16 +38,19 @@ while newGame:
             print("You hit blackjack. YOU WIN")
             print(f"Your hand: {user_hand}, final score{user_score}")
             print(f"Dealer's Hand: {computer_hand}, final score{computer_score}")
+            sleep (5)
             continue
         elif computer_score == 21 and user_score != 21:
             print("The dealer hit blackjack. You LOSE")
             print(f"Your hand: {user_hand}, final score{user_score}")
             print(f"Dealer's Hand: {computer_hand}, final score{computer_score}")
+            sleep(5)
             continue
         elif user_score == 21 and computer_score == 21:
             print("Both got blackjack. It's a DRAW!")
             print(f"Your hand: {user_hand}, final score{user_score}")
             print(f"Dealer's Hand: {computer_hand}, final score{computer_score}")
+            sleep(5)
             continue
         draw = input("Type 'y' to get another card, type 'n' to pass: ")
         while draw == 'y':
